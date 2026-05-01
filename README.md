@@ -45,3 +45,61 @@ echo 'export PATH="$PATH:$(go env GOPATH)/bin"' >> ~/.bashrc && source ~/.bashrc
 which nmap httpx webanalyze sslscan
 
 
+## Python Environment Setup
+
+# Clone this repository
+git clone https://github.com/YOUR_USERNAME/ultra-osint.git
+cd ultra-osint
+
+# Create and activate virtual environment
+python3 -m venv osint-env
+source osint-env/bin/activate
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+## 🚀 Quick Start
+
+# Basic scan
+python3 ultra_osint.py example.com
+
+# Full scan with API keys and output files
+python3 ultra_osint.py https://target.com \
+  --shodan-api YOUR_SHODAN_KEY \
+  --builtwith-key YOUR_BUILTWITH_KEY \
+  -o report.txt -j data.json \
+  -v  # verbose mode
+
+# Custom port scan
+python3 ultra_osint.py 192.168.1.1 --ports 22,80,443,8080,3306
+
+## 📁 Project Structure
+
+ultra-osint/
+├── ultra_osint.py          # Main executable script
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+├── LICENSE                # MIT License
+├── .gitignore             # Git ignore rules
+├── CONTRIBUTING.md        # Contribution guidelines
+├── SECURITY.md            # Security policy & responsible disclosure
+└── outputs/               # Generated reports (git-ignored)
+
+⚠️ Legal & Ethical Use
+✅ Allowed:
+Authorized penetration testing engagements
+Security research on assets you own or have written permission to test
+Educational purposes in controlled lab environments
+Bug bounty programs (within scope rules)
+❌ Prohibited:
+Unauthorized scanning of systems you don't own
+Harassment, doxxing, or illegal surveillance
+Violating terms of service of any platform
+Always obtain written authorization before scanning any target.
+🤝 Contributing
+Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
+🔐 Security Policy
+Found a vulnerability? Please review SECURITY.md for responsible disclosure.
+📄 License
+Distributed under the MIT License. See LICENSE for details.
+Built with ❤️ for the security research community
