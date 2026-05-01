@@ -57,6 +57,7 @@ source osint-env/bin/activate
 
 # Install Python dependencies
 pip install -r requirements.txt
+```
 
 ## 🚀 Quick Start
 
@@ -74,7 +75,7 @@ python3 ultra_osint.py https://target.com \
 python3 ultra_osint.py 192.168.1.1 --ports 22,80,443,8080,3306
 
 ## 📁 Project Structure
-
+```
 ultra-osint/
 ├── ultra_osint.py          # Main executable script
 ├── requirements.txt        # Python dependencies
@@ -84,22 +85,26 @@ ultra-osint/
 ├── CONTRIBUTING.md        # Contribution guidelines
 ├── SECURITY.md            # Security policy & responsible disclosure
 └── outputs/               # Generated reports (git-ignored)
-
-⚠️ Legal & Ethical Use
-✅ Allowed:
+```
+### ⚠️ Legal & Ethical Use
+### ✅ Allowed:
 Authorized penetration testing engagements
 Security research on assets you own or have written permission to test
 Educational purposes in controlled lab environments
 Bug bounty programs (within scope rules)
-❌ Prohibited:
+
+### ❌ Prohibited:
 Unauthorized scanning of systems you don't own
 Harassment, doxxing, or illegal surveillance
 Violating terms of service of any platform
 Always obtain written authorization before scanning any target.
-🤝 Contributing
+
+### 🤝 Contributing
 Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
-🔐 Security Policy
+
+### 🔐 Security Policy
 Found a vulnerability? Please review SECURITY.md for responsible disclosure.
-📄 License
+
+### 📄 License
 Distributed under the MIT License. See LICENSE for details.
 Built with ❤️ for the security research community
