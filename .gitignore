@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+
+# Virtual environments
+osint-env/
+venv/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project outputs (never commit results)
+outputs/
+*.log
+*.json
+report.txt
+data.json
+technologies.json
+
+# Secrets (NEVER commit these)
+*.env
+api_keys.py
+credentials.json
+.shodan_key
+.builtwith_key
