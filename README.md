@@ -48,7 +48,7 @@ which nmap httpx webanalyze sslscan
 ## Python Environment Setup
 
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/ultra-osint.git
+git clone https://github.com/CeevitWonder/ultra-osint.git
 cd ultra-osint
 
 # Create and activate virtual environment
